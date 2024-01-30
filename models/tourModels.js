@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-const short = require('short-uuid');
 
-// tour schema
 const tourSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -11,7 +9,7 @@ const tourSchema = new mongoose.Schema({
   },
   duration: {
     type: Number,
-    required: [true, 'A tour mus have a duration'],
+    required: [true, 'A tour must have a duration'],
   },
   maxGroupSize: {
     type: Number,
